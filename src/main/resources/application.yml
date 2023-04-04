@@ -17,6 +17,9 @@ spring:
     password: "010326"
     database: 0
     #注意数据库的密码格式问题，mysql和redis如果是纯数字密码可能需要双引号括起来
+  cache:
+    redis:
+      time-to-live: 1800000   #cache缓存过期时间30分钟
 mybatis-plus:
   configuration:
     #在映射实体或者属性时，将数据库中表名和字段名中的下划线去掉，按照驼峰命名法映射
